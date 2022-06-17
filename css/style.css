@@ -86,13 +86,7 @@ a {
   color: white;
   background-color: black;
 }
-.card_favorite {
-  position: absolute;
-  top: -3px;
-  right: 36px;
-  background: transparent;
-  border-color: transparent;
-}
+
 .card__label--gradus {
   padding-top: 19px;
   padding-left: 26px;

@@ -12,30 +12,28 @@
   <link rel="icon" href="img/logo.png" type="image/png">
   <script>
     window.onload = function () {
-    const today = new Date();
-    const yyyy = today.getFullYear();
-    let mm = today.getMonth() + 1;
-    let dd = today.getDate();
+      const today = new Date();
+      const yyyy = today.getFullYear();
+      let mm = today.getMonth() + 1;
+      let dd = today.getDate();
 
-    if (dd < 10) dd = '0' + dd;
-    if (mm < 10) mm = '0' + mm;
+      if (dd < 10) dd = '0' + dd;
+      if (mm < 10) mm = '0' + mm;
 
-    document.querySelector('.title__date').innerHTML = (dd + '.' + mm + '.' + yyyy);
+      document.querySelector('.header__title-date').innerHTML = (dd + '.' + mm + '.' + yyyy);
     }
   </script>
-  
+
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <div class="container">
-      <div class="header">
-        <section class="title">
-          <h1 class="title__text">Главная</h1>
-          <div class="title__date"></div>
-        </section>
-        <div class="logo"><img src="img/logo.png" alt="logo.png" /></div>
-      </div>
+      <section class="header__title">
+        <h1 class="header__title-page">Главная</h1>
+        <p class="header__title-date"></p>
+      </section>
+      <div class="logo"><img src="img/logo.png" alt="logo.png" /></div>
       <div class="container__menu">
         <div class="container__menu__new">
           <a href="#">Новинки</a>
@@ -53,34 +51,76 @@
     </div>
   </header>
   <div class="container">
-    <div class="card">
-      <img class="card__image" src="img/product1.png">
-      <div class="card__label">
-        <div class="card__label--gradus">30%</div>
-        <div class="card__label--alco">Алкоголя</div>
+    <div class="main">
+      <div class="main__card">
+        <div class="card">
+          <img class="card__image" src="img/product1.png">
+          <div class="card__label">
+            <div class="card__label--gradus">30%</div>
+            <div class="card__label--alco">Алкоголя</div>
+          </div>
+          <div class="card__info">
+            <h2>Blackberry</h2>
+            <p>Fresh drink</p>
+          </div>
+        </div>
       </div>
-      <div class="card__info">
-        <h2>Blackberry</h2>
-        <p>Fresh drink</p>
+      <div class="main__card">
+        <div class="card">
+          <img class="card__image" src="img/product1.png">
+          <div class="card__label">
+            <div class="card__label--gradus">30%</div>
+            <div class="card__label--alco">Алкоголя</div>
+          </div>
+          <div class="card__info">
+            <h2>Blackberry</h2>
+            <p>Fresh drink</p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="card">
-      <img class="card__image" src="img/product2.png">
-      <div class="card__label">
-        <div class="card__label--gradus">40%</div>
-        <div class="card__label--alco">Алкоголя</div>
+      <div class="main__card">
+        <div class="card">
+          <img class="card__image" src="img/product1.png">
+          <div class="card__label">
+            <div class="card__label--gradus">30%</div>
+            <div class="card__label--alco">Алкоголя</div>
+          </div>
+          <div class="card__info">
+            <h2>Blackberry</h2>
+            <p>Fresh drink</p>
+          </div>
+        </div>
       </div>
-      <div class="card__info">
-        <h2>Majito</h2>
-        <p>Fresh drink</p>
+      <div class="main__card">
+        <div class="card">
+          <img class="card__image" src="img/product1.png">
+          <div class="card__label">
+            <div class="card__label--gradus">30%</div>
+            <div class="card__label--alco">Алкоголя</div>
+          </div>
+          <div class="card__info">
+            <h2>Blackberry</h2>
+            <p>Fresh drink</p>
+          </div>
+        </div>
       </div>
-      <button class="card_favorite">
-        <img src="img/favorite_button.svg">
-      </button>
+      <div class="main__card">
+        <div class="card">
+          <img class="card__image" src="img/product1.png">
+          <div class="card__label">
+            <div class="card__label--gradus">30%</div>
+            <div class="card__label--alco">Алкоголя</div>
+          </div>
+          <div class="card__info">
+            <h2>Blackberry</h2>
+            <p>Fresh drink</p>
+          </div>
+        </div>
+      </div>
     </div>
     <footer class="footer">
       <div class="footer__wrapper">
-        <button class="footer__favorites">
+        <button class="footer__search">
           Поиск
         </button>
       </div>

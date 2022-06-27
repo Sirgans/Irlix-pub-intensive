@@ -4,23 +4,36 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
 }
-header {
-  position: relative;
+.header {
+  position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  background-color: #201F2E;
 }
-.title {
-  margin: 0;
+.header__title {
+  margin-top: 32px;
+  width: 28px;
 }
-.title__date {
+.header__title-date {
   color: white;
-  margin-top: -13px;
 }
+
+.header__title-page {
+  font-size: 24px;
+  color: #ffffff;
+  line-height: 28px;
+}
+
 .container {
   padding: 0 32px;
-  padding-bottom: 62px;
 }
 .logo {
   position: absolute;
   right: 0;
+  top: 0;
 }
 .logo img {
   width: 100%;
@@ -30,10 +43,7 @@ header {
   display: flex;
   justify-content: space-between;
 }
-.title__text {
-  font-size: 24px;
-  color: #ffffff;
-}
+
 .container__menu::-webkit-scrollbar {
   width: 0;
 }
@@ -66,6 +76,16 @@ header {
 a {
   text-decoration: none;
   color: #ffffff;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 32px;
+  margin: 230px auto 0;
+}
+.main__card {
+  margin-bottom: 32px;
 }
 .card {
   width: 100%;
@@ -140,7 +160,7 @@ a {
   align-items: center;
   width: 100%;
 }
-.footer__favorites {
+.footer__search {
   margin-top: 24px;
   margin-left: 32px;
   margin-bottom: 24px;
@@ -151,13 +171,13 @@ a {
   padding: 15px 24px;
   color: #c4c1cf;
 }
-.footer__search {
+/* .footer__search {
   margin-right: 49px;
   margin-top: 36px;
   margin-bottom: 36px;
   background: transparent;
   border-color: transparent;
-}
+} */
     /* Детальная */
 .detail {
   position: relative;
@@ -249,10 +269,4 @@ ul {
   background-color: #201F2E;
   margin-top: 0;
   padding: 0;
-}
-@media (min-width: 1140px) and (max-width: 1920px) {
-  body {
-    margin: 0;
-    background: white;
-  }
 }
